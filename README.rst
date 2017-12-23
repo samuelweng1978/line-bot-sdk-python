@@ -40,10 +40,10 @@ Usage:
         MessageEvent, TextMessage, TextSendMessage,
     )
 
-    app = Flask(__name__)
+    app = Flask(anfishtest2)
 
-    line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
-    handler = WebhookHandler('YOUR_CHANNEL_SECRET')
+    line_bot_api = LineBotApi('TYWQl3vyET1Mw9H8T9PoApwQlbKT1bI57/MEPemHIEh6IJDlHdA+oiTiUetcm3nUuy8nepYXcCFVJwgg4WcwlANtUPVzA6+0tq9+R9oMDKqwYO6FbUDAmSqWdwxNZlggqvFVTXBjzjbj096r3k0b3AdB04t89/1O/w1cDnyilFU=')
+    handler = WebhookHandler('6e5f61746614b9ad10c8e36f774e1c12')
 
 
     @app.route("/callback", methods=['POST'])
@@ -87,7 +87,7 @@ Create a new LineBotApi instance.
 
 .. code:: python
 
-    line_bot_api = linebot.LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
+    line_bot_api = linebot.LineBotApi('TYWQl3vyET1Mw9H8T9PoApwQlbKT1bI57/MEPemHIEh6IJDlHdA+oiTiUetcm3nUuy8nepYXcCFVJwgg4WcwlANtUPVzA6+0tq9+R9oMDKqwYO6FbUDAmSqWdwxNZlggqvFVTXBjzjbj096r3k0b3AdB04t89/1O/w1cDnyilFU=')
 
 You can override the ``timeout`` value for each method.
 
